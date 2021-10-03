@@ -10,8 +10,3 @@ def selectionSort(vetoRecebido):
 
         (vetoRecebido[item], vetoRecebido[menor]) = (
             vetoRecebido[menor], vetoRecebido[item])
-
-
-numbers = [73, 62, 61, 69]
-selectionSort(numbers)
-print("Sorted list:", numbers)

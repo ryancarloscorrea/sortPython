@@ -1,7 +1,7 @@
 from insertion_sort import insertion_sort
 from MergeSort import mergeSort
 from selectionSort import selectionSort
-from RadixSort import radixSort
+from radix_sort import radixSort
 from shellSort import shellSort
 from HeapSort import heapSort
 
@@ -9,7 +9,7 @@ import timeit
 import numpy as np
 import pandas as pd
 
-from src.algorithmsSort.graph import generateGraph
+from graph import generateGraph
 
 
 def execFuncSort(index, arr):
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     print("Escolha o valor maxímo de entrada: minimo (2000) maximo (20000)")
     max = int(input())
     stp = 1000
-    rpt = 1
+    rpt = 5
 
     numLoops = int(max / stp)
     numbersN = []
@@ -57,7 +57,6 @@ if __name__ == '__main__':
 
     # laço inicial para cada valor de entrada
     for idx, n in enumerate(numbersN):
-        print('valor de n: ', n)
         list_of_times = []
         # laço para cada algoritmo
         for indexAlg, algSort in enumerate(listOfSorts):

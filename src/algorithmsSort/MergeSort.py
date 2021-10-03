@@ -3,30 +3,30 @@ def mergeSort(arr):
 
         mid = len(arr) // 2
 
-        lowToMid = arr[:mid]
+        initToMid = arr[:mid]
 
-        midToHigh = arr[mid:]
+        midToFinal = arr[mid:]
 
-        mergeSort(lowToMid)
-        mergeSort(midToHigh)
+        mergeSort(initToMid)
+        mergeSort(midToFinal)
 
         i = j = k = 0
 
-        while i < len(lowToMid) and j < len(midToHigh):
-            if lowToMid[i] < midToHigh[j]:
-                arr[k] = lowToMid[i]
+        while i < len(initToMid) and j < len(midToFinal):
+            if initToMid[i] < midToFinal[j]:
+                arr[k] = initToMid[i]
                 i += 1
             else:
-                arr[k] = midToHigh[j]
+                arr[k] = midToFinal[j]
                 j += 1
             k += 1
 
-        while i < len(lowToMid):
-            arr[k] = lowToMid[i]
+        while i < len(initToMid):
+            arr[k] = initToMid[i]
             i += 1
             k += 1
 
-        while j < len(midToHigh):
-            arr[k] = midToHigh[j]
+        while j < len(midToFinal):
+            arr[k] = midToFinal[j]
             j += 1
             k += 1

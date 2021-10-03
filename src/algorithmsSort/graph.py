@@ -9,7 +9,6 @@ def generateGraph(table, listOfN, max):
     plt.xlabel('Tamanho da entrada')
     plt.ylabel('Tempo')
     plt.title("Algoritmos de ordenação")
-    print(listOfN, ' VALUES N')
 
     timesSelection = table['SELECTION'].tolist()
     timesRadix = table['RADIX'].tolist()
@@ -17,7 +16,6 @@ def generateGraph(table, listOfN, max):
     timesHEAP = table['HEAP'].tolist()
     timesMerge = table['MERGE'].tolist()
     timesShell = table['SHELL'].tolist()
-    print(timesSelection, ' TIME SELECTION')
 
 
     plt.plot(listOfN, timesSelection, label='SELECTION')
