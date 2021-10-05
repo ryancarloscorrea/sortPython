@@ -1,0 +1,46 @@
+receber inc, max, stp
+atribuir n como inc
+
+tempoF1,tempoF2,tempoF3
+tempoF4,tempoF5,tempoF6
+ 
+func criarVetor(n)
+func desordenarVetor(vetor); 
+
+enquanto (n <= max) {		
+		f1 (n){
+			criarVetor(n) 
+			executar
+			registrarTempo(n);
+		}
+		f2 (n){
+			registrar tempoF2 para n;
+			executar
+		}	registrarTempo(n);
+		f3 (n){
+			registrar tempoF3 para n;
+			executar
+			registrarTempo(n);
+		}
+		f4 (n){
+			registrar tempoF4 para n;
+			executar
+			registrarTempo(n);
+		}
+		f5 (n){
+			registrar tempoF5 para n;
+			executar
+			registrarTempo(n);
+		}
+		f6 (n){
+			registrar tempoF6 para n;
+			executar
+			registrarTempo(n);
+		}
+		n += stp
+		
+		desordenarVetor(); 
+}
+
+
+ 
